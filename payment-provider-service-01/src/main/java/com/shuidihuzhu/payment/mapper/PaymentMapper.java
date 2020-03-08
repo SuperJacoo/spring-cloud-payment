@@ -1,7 +1,7 @@
 package com.shuidihuzhu.payment.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import module.Payment;
+import com.shuidihuzhu.payment.module.Payment;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

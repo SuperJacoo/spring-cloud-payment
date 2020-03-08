@@ -1,14 +1,12 @@
 package com.shuidihuzhu.payment.controller;
 
-import com.shuidihuzhu.payment.service.PaymentService;
-import lombok.extern.slf4j.Slf4j;
-import com.shuidihuzhu.payment.module.Payment;
 import com.shuidihuzhu.payment.module.Response;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.shuidihuzhu.payment.utils.NewResponseUtil;
+import org.springframework.web.client.RestTemplate;
 
 /**
  * @author gehuadong@shuidihuzhu.com
@@ -20,7 +18,9 @@ import com.shuidihuzhu.payment.utils.NewResponseUtil;
 public class PaymentController {
 
     @Autowired
-    private PaymentService paymentService;
+    private RestTemplate restTemplate;
+
+    private static final String url = "http://localhost:8001";
 
     /**
      * 根据ID查询付款信息
@@ -30,7 +30,7 @@ public class PaymentController {
      */
     @GetMapping("/get-by-id")
     public Response getPaymentById(Long id) {
-        Payment payment = paymentService.getPaymentById(id);
-        return NewResponseUtil.makeSuccess(payment);
+        Response response = restTemplate.getForObject(url + "/payment/get-by-id?id=" + id, Response.class);
+        return response;
     }
 }

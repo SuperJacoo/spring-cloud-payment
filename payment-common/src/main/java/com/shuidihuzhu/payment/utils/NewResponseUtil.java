@@ -1,6 +1,6 @@
-package utils;
+package com.shuidihuzhu.payment.utils;
 
-import module.Response;
+import com.shuidihuzhu.payment.module.Response;
 
 /**
  * @author gehuadong@shuidihuzhu.com

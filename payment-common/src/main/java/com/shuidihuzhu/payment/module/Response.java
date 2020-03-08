@@ -1,4 +1,4 @@
-package module;
+package com.shuidihuzhu.payment.module;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

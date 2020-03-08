@@ -1,6 +1,7 @@
 package com.shuidihuzhu.payment.service;
 
-import module.Payment;
+
+import com.shuidihuzhu.payment.module.Payment;
 
 /**
  * @author gehuadong@shuidihuzhu.com

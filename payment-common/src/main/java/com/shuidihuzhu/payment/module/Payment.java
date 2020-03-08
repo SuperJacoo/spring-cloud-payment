@@ -1,6 +1,5 @@
-package module;
+package com.shuidihuzhu.payment.module;
 
-import com.baomidou.mybatisplus.annotation.TableLogic;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -21,7 +20,6 @@ public class Payment implements Serializable {
 
     private String serial;
 
-    @TableLogic
     private Integer isDelete;
 
     private Date createTime;
