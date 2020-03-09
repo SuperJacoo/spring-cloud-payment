@@ -2,19 +2,17 @@ package com.shuidihuzhu.payment;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  * @author gehuadong@shuidihuzhu.com
- * @date 2020-03-08 11:30
+ * @date 2020-03-07 22:40
  */
-@EnableDiscoveryClient
-@SpringBootApplication
 @EnableEurekaClient
-public class PaymentConsumerService01Application {
+@SpringBootApplication
+public class PaymentProviderService02Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(PaymentConsumerService01Application.class, args);
+        SpringApplication.run(PaymentProviderService02Application.class, args);
     }
 }

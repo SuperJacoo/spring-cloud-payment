@@ -12,9 +12,9 @@
         <module>payment-common</module>
         <module>payment-consumer-service-01</module>
         <module>payment-eureka-server-01</module>
-        <module>payment-eureka-server-02</module>
         <module>payment-provider-service-01</module>
         <module>payment-provider-service-02</module>
+        <module>payment-eureka-server-03</module>
     </modules>
     <packaging>pom</packaging>
 
