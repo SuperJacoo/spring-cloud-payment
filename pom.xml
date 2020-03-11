@@ -19,6 +19,7 @@
         <module>payment-consumer-service-02</module>
         <module>payment-consumer-service-04</module>
         <module>payment-provider-service-04</module>
+        <module>payment-openfeign-client</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -46,6 +47,7 @@
         <mybatis.spring.boot.version>1.3.2</mybatis.spring.boot.version>
         <mybatis.plus.boot.starter.version>3.3.0</mybatis.plus.boot.starter.version>
         <payment.common.version>1.0-SNAPSHOT</payment.common.version>
+        <hutool.all.version>5.1.0</hutool.all.version>
     </properties>
 
     <dependencyManagement>
@@ -120,6 +122,12 @@
                 <groupId>com.shuidihuzhu.payment</groupId>
                 <artifactId>payment-common</artifactId>
                 <version>${payment.common.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.all.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
