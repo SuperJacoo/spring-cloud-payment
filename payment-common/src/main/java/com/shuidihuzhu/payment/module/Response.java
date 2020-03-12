@@ -20,4 +20,12 @@ public class Response<T> implements Serializable {
     private String msg;
 
     private T data;
+
+    public boolean ok() {
+        return this.code == 0;
+    }
+
+    public boolean notOk() {
+        return this.code != 0;
+    }
 }
