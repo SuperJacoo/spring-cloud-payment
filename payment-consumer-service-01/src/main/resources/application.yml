@@ -24,4 +24,4 @@ ribbon:
 logging:
   level:
     # feign日志以什么级别监控哪个接口
-    com.shuidihuzhu.payment.PaymentService: debug
+    com.ghd.payment.PaymentService: debug
