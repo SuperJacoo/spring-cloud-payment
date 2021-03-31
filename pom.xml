@@ -40,7 +40,7 @@
         <junit.version></junit.version>
         <log4j.version>4.12</log4j.version>
         <lombok.version>1.18.10</lombok.version>
-        <guava.version>28.1-jre</guava.version>
+        <guava.version>29.0-jre</guava.version>
         <mysql.version>8.0.19</mysql.version>
         <druid.version>1.1.20</druid.version>
         <druid.spring.boot.starter.version>1.1.20</druid.spring.boot.starter.version>
